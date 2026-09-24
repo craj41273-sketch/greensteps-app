@@ -603,4 +603,47 @@ h4{font-size:15px;font-weight:600}
   .topbar-points{padding:8px}
   .screens{padding:20px 16px 100px}
   h1{font-size:24px}
-  .
+  .greeting h1{font-size:22px}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .impact-big-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .impact-big-value{font-size:22px}
+  .rewards-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .community-grid{grid-template-columns:1fr}
+  .achievements-grid{grid-template-columns:repeat(2,1fr)}
+  .home-grid{grid-template-columns:1fr}
+  .impact-hero{grid-template-columns:1fr}
+  .donut-card{flex-direction:column;align-items:flex-start;gap:16px}
+  .donut{width:120px;height:120px}
+  .hero-card{padding:22px}
+  .hero-card-content{gap:16px}
+  .hero-stats{gap:18px}
+  .profile-hero{padding:22px}
+  .profile-hero-content{flex-direction:column;text-align:center;align-items:center}
+  .profile-stats{justify-content:center}
+  .welcome-inner{grid-template-columns:1fr;gap:32px;text-align:center}
+  .welcome-illustration{order:-1;margin:0 auto;max-width:260px}
+  .welcome-features{align-items:center}
+  .welcome-content p{margin-left:auto;margin-right:auto}
+  .modal-overlay{padding:0;align-items:flex-end}
+  .modal{border-radius:var(--radius-2xl) var(--radius-2xl) 0 0;max-height:92vh;max-width:100%;transform:translateY(100%)}
+  .modal-overlay.active .modal{transform:translateY(0)}
+  .toast-container{bottom:90px;right:12px;left:12px;align-items:stretch}
+  .toast{min-width:0;max-width:100%}
+  .theme-options{grid-template-columns:repeat(3,1fr)}
+  .bar-chart{height:160px;gap:6px}
+}
+@media (max-width:420px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .impact-big-grid{grid-template-columns:1fr 1fr}
+  .rewards-grid{grid-template-columns:1fr}
+  .achievements-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:14px}
+  .hero-stat-value{font-size:20px}
+  .welcome-content h1{font-size:32px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
+  .progress-bar::after{display:none}
+  .greeting-emoji{animation:none}
+}
